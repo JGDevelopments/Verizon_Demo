@@ -46,12 +46,6 @@ const Topbar = () => {
 
       <Box sx={{ display: { xs: "none", md: "flex" }, mr: "auto" }}>
         <Header title="verizon" />
-        {/* <img
-        alt="profile-user"
-        width="100px"
-        height="100px"
-        src={`../../assets/pngegg (1).png`}  This is an image of the verizon logo 
-     /> */}
       </Box>
 
       <Box sx={{ display: { xs: "none", md: "flex" }, mr: "70%" }}>
