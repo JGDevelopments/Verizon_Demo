@@ -40,8 +40,6 @@ const Dashboard = () => {
         </Typography>
       </Box>
 
-      {/* GRID & CHARTS */}
-
       {/* <Box
         display="grid"
         gridTemplateColumns="repeat(12, 1fr)"
