@@ -15,24 +15,6 @@ import HeadsetMicIcon from "@mui/icons-material/HeadsetMic";
 import MessageIcon from "@mui/icons-material/Message";
 import PersonIcon from "@mui/icons-material/Person";
 
-// const Item = ({ title, to, icon, selected, setSelected }) => {
-//   const theme = useTheme();
-//   const colors = tokens(theme.palette.mode);
-//   return (
-//     <MenuItem
-//       active={selected === title}
-//       style={{
-//         color: colors.grey[100],
-//       }}
-//       onClick={() => setSelected(title)}
-//       icon={icon}
-//     >
-//       <Typography>{title}</Typography>
-//       <Link to={to} />
-//     </MenuItem>
-//   );
-// };
-
 const Topbar = () => {
   return (
     <Box
@@ -64,5 +46,4 @@ const Topbar = () => {
     </Box>
   );
 };
-
 export default Topbar;
