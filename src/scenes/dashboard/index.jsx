@@ -1,29 +1,13 @@
-import {
-  Box,
-  Button,
-  Icon,
-  IconButton,
-  Typography,
-  useTheme,
-} from "@mui/material";
+import { Box, IconButton, Typography } from "@mui/material";
 import { mockTransactions } from "../../data/mockData";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
-import EmailIcon from "@mui/icons-material/Email";
-import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
-import PersonAddIcon from "@mui/icons-material/PersonAdd";
-import TrafficIcon from "@mui/icons-material/Traffic";
-import Header from "../../components/Header";
 import LineChart from "../../components/LineChart";
 import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
-import DashBox from "../../components/DashBox";
 import ProgressCircle from "../../components/ProgressCircle";
-import { red } from "@mui/material/colors";
 import Grid from "@mui/material/Grid"; // Grid version 1
 import Item from "@mui/material/Grid"; // Grid version 1
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
-import Grid2 from "@mui/material/Unstable_Grid2"; // Grid version 2
-import { color } from "@mui/system";
 
 const Dashboard = () => {
   return (
@@ -35,73 +19,15 @@ const Dashboard = () => {
         alignItems="center"
         paddingBottom={"1rem"}
       >
-        <Typography variant="h4" color={"black"} fontWeight="bold">
+        <Typography
+          variant="h4"
+          color={"black"}
+          fontWeight="bold"
+          fontFamily={"Oswald"}
+        >
           Dashboard
         </Typography>
       </Box>
-
-      {/* <Box
-        display="grid"
-        gridTemplateColumns="repeat(12, 1fr)"
-        gridAutoRows="140px"
-      >
-        <Box
-          gridColumn="span 3"
-          // backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          border={"solid silver"}
-          borderRadius="7%"
-          p={1}
-        >
-          <DashBox
-            title="Connectivity"
-            subtitle="Sales Obtained"
-            progress="0.50"
-            increase="+21%"
-            icon={<PointOfSaleIcon sx={{ color: "red", fontSize: "26px" }} />}
-          />
-        </Box>
-
-        <Box
-          gridColumn="span 3"
-          // backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          border={"solid silver"}
-          borderRadius="7%"
-          p={1}
-        >
-          <DashBox
-            title="32,441"
-            subtitle="Lorem Ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do elusmod tempor incididunt ut labore Modify alerts Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore"
-          />
-        </Box>
-
-        <Box
-          gridColumn="span 3"
-          // backgroundColor={colors.primary[400]}
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          border={"solid silver"}
-          borderRadius="7%"
-          p={1}
-        >
-          <DashBox
-            title="1,325,134"
-            subtitle="Traffic Received"
-            progress="0.80"
-            increase="+43%"
-            icon={<TrafficIcon sx={{ color: "red", fontSize: "26px" }} />}
-          />
-        </Box>
-      </Box> */}
 
       <Grid container spacing={0} border={"solid silver"} borderRadius={2}>
         <Grid

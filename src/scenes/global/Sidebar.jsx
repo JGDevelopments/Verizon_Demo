@@ -3,21 +3,10 @@ import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
-import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
-import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
-import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import MemoryIcon from "@mui/icons-material/Memory";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import EqualizerOutlinedIcon from "@mui/icons-material/EqualizerOutlined";
+import "../../index.css";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   return (
@@ -36,7 +25,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
 };
 
 const Sidebar = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed] = useState(false);
   const [selected, setSelected] = useState("Dashboard");
 
   return (
@@ -62,6 +51,7 @@ const Sidebar = () => {
             <Box paddingBottom={5}>
               <Typography
                 variant="h6"
+                fontFamily={"Dancing Script"}
                 color={"white"}
                 sx={{ m: "15px 0 5px 20px" }}
                 fontWeight="bold"
@@ -79,6 +69,7 @@ const Sidebar = () => {
             <Box paddingBottom={5}>
               <Typography
                 variant="h6"
+                fontFamily={"Dancing Script"}
                 color={"white"}
                 sx={{ m: "15px 0 5px 20px" }}
                 fontWeight="bold"
@@ -97,6 +88,7 @@ const Sidebar = () => {
             <Box paddingBottom={5}>
               <Typography
                 variant="h6"
+                fontFamily={"Dancing Script"}
                 color={"white"}
                 sx={{ m: "15px 0 5px 20px" }}
                 fontWeight="bold"
@@ -142,6 +134,7 @@ const Sidebar = () => {
             <Box paddingBottom={5}>
               <Typography
                 variant="h6"
+                fontFamily={"Dancing Script"}
                 color={"white"}
                 sx={{ m: "15px 0 5px 20px" }}
                 fontWeight="bold"

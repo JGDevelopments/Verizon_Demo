@@ -33,3 +33,17 @@ body,
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.font-link {
+  font-family: "Oswald", sans-serif;
+}
+
+.dancing-font {
+  font-family: "Dancing Script", cursive;
+}
+
+@font-face {
+  font-family: "Dancing Script", cursive;
+  src: local("Dancing Script"),
+    url("./fonts/Dancing_Script/static/DancingScript-Regular.ttf")
+      format("truetype");
+} /*This is our locally isntalled font */

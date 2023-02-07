@@ -1,4 +1,4 @@
-import { Typography, Box} from "@mui/material";
+import { Typography, Box } from "@mui/material";
 
 const Header = ({ title, subtitle }) => {
   return (
@@ -7,7 +7,8 @@ const Header = ({ title, subtitle }) => {
         variant="h5"
         color={"black"}
         fontWeight="bold"
-        >
+        fontFamily={"Oswald"}
+      >
         {title}
       </Typography>
       <Typography variant="h1" color={"red"}>
