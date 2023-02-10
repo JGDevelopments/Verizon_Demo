@@ -4,10 +4,15 @@ import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 import LineChart from "../../components/LineChart";
 import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
-import ProgressCircle from "../../components/ProgressCircle";
 import Grid from "@mui/material/Grid"; // Grid version 1
 import Item from "@mui/material/Grid"; // Grid version 1
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import DashBox, { PieChart } from "../DashBox";
+import { totalDevices } from "../DashBox";
+
+const onClick = () => {
+  console.log("Hello Sreedhar");
+};
 
 const Dashboard = () => {
   return (
@@ -106,38 +111,17 @@ const Dashboard = () => {
           paddingTop={2}
         >
           {/* ROW 3 */}
+
+          <DashBox
+            title={"Sensor Health"}
+            subtitle={`Total Devices: ${totalDevices}`}
+            Comp={<PieChart />}
+          />
+          {/*Pie is implemented here */}
+
           <Box
             gridColumn="span 3"
-            gridRow="span 2"
-            // backgroundColor={colors.primary[400]}
-
-            border={"solid silver"}
-            borderRadius={2}
-          >
-            <Grid borderBottom={"solid silver"}>
-              <Typography variant="h5" fontWeight="600">
-                Sensor Health
-              </Typography>
-            </Grid>
-
-            <Box
-              display="flex"
-              flexDirection="column"
-              alignItems="center"
-              mt="25px"
-            >
-              <ProgressCircle size="125" />
-              <Typography variant="h5" color={"red"} sx={{ mt: "15px" }}>
-                $48,352 revenue generated
-              </Typography>
-              <Typography>
-                Includes extra misc expenditures and costs
-              </Typography>
-            </Box>
-          </Box>
-          <Box
-            gridColumn="span 3"
-            gridRow="span 2"
+            gridRow="span 3"
             // backgroundColor={colors.primary[400]}
             border={"solid silver"}
             borderRadius={2}
